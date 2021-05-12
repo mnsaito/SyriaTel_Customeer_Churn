@@ -78,11 +78,11 @@ Test Precision: 0.91
 The bar chart below depicts the important features in my model
 ![important features](reports/figures/feature_importance.png)
 
-There was a notable difference between the top 3 important features during the exploratory data analysis ("EDA").  As shown below, there is a clear distinction between long-term customers and short-term customers in terms of the number of minutes they use their cell service during the day
+There was a notable difference between the top 3 important features during the exploratory data analysis ("EDA").  As shown below, there is a clear distinction between long-term customers and short-term customers in terms of the number of minutes they use their cell service during the day  
 ![day_mins](reports/figures/day_mins.png)
-the number of service calls they make
+the number of service calls they make  
 ![service_calls](reports/figures/service_calls.png)
-and the number of international calls they make
+and the number of international calls they make  
 ![intl_calls](reports/figures/intl_calls.png)
 
 
