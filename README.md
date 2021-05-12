@@ -29,7 +29,7 @@ SyriaTel has identified that it is losing potential revenue by investing resourc
 
 ### Quick Links
 
-1. [Final Analysis Notebook](notebooks/report/SyriaTel_Customer_Churn_Analysis.ipynb)
+1. [Final Analysis Notebook](notebooks/report/final_notebook.ipynb)
 2. [Presentation Slides](reports/presentation.pdf)
 
 ### Setup Instructions
@@ -49,14 +49,14 @@ Since SyriaTel needs to minimize both false negatives and false positives, I use
 
 ## Model Development
 
-Initially I investigated the relationship between various features and the target.  If I found any trends in the data, I segregated the data into bins to see if it improved model performance.  For details of my preprocessing steps, please review my [Feature Engineering notebook](../exploratory/Feature_Engineering.ipynb).
+Initially I investigated the relationship between various features and the target.  If I found any trends in the data, I segregated the data into bins to see if it improved model performance.  For details of my preprocessing steps, please review my [Feature Engineering notebook](notebooks/exploratory/Feature_Engineering.ipynb).
   
 I then investigated five different classification models:  
-    [Logistic Regression](../exploratory/Model1-LogisticRegression.ipynb)  
-    [K-Nearest Neighbors (KNN)](../exploratory/Model2-KNN.ipynb)  
-    [Decision Tree](../exploratory/Model3-DecisionTree.ipynb)  
-    [Random Forest](../exploratory/Model4-RandomForest.ipynb)  
-    [Gradient Boost](../exploratory/Model5-GradientBoost.ipynb)  
+    [Logistic Regression](notebooks/exploratory/Model1-LogisticRegression.ipynb)  
+    [K-Nearest Neighbors (KNN)](notebooks/exploratory/Model2-KNN.ipynb)  
+    [Decision Tree](notebooks/exploratory/Model3-DecisionTree.ipynb)  
+    [Random Forest](notebooks/exploratory/Model4-RandomForest.ipynb)  
+    [Gradient Boost](notebooks/exploratory/Model5-GradientBoost.ipynb)  
   
 All models provided decent results for recall.  
   
@@ -64,7 +64,7 @@ Logistic Regression and KNN also provided decent results for accuracy, but were 
   
 Decision Tree and Random Forest provided good results for accuracy, and improved upon the precision scores from Logistic Regression and KNN, but their precision scores were still not satisfactory.  
   
-Gradient Boost provided the best model.  It provided highly accurate classifications, and it provided good results for precision.  Since I used the same random_state value throughout my modeling, I [tested the Gradient Boost model](../exploratory/Test_Gradient_Boost.ipynb) using a different random_state, and found that it provided highly accurate classifications, provided fairly high results for precision and decent results for recall. I therefore proceeded with my Gradient Boost model.
+Gradient Boost provided the best model.  It provided highly accurate classifications, and it provided good results for precision.  Since I used the same random_state value throughout my modeling, I [tested the Gradient Boost model](notebooks/exploratory/Test_Gradient_Boost.ipynb) using a different random_state, and found that it provided highly accurate classifications, provided fairly high results for precision and decent results for recall. I therefore proceeded with my Gradient Boost model.
 
 ## Evaluation
 
@@ -72,6 +72,7 @@ As shown below, my model provided highly accurate classifications, good results 
 Test Accuracy: 0.96
 Test Recall: 0.79
 Test Precision: 0.91
+
 ![confusion matrix](reports/figures/confusion_matrix.png)
 
 The bar chart below depicts the important features in my model
