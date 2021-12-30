@@ -10,6 +10,8 @@ SyriaTel has identified that it is losing potential revenue by investing resourc
 ├── README.md        <-- Main README file explaining the project's business case,
 │                        methodology, and findings
 │
+├── churn.yml        <-- Environment to run notebook
+│
 ├── data             <-- Data in CSV format
 │   ├── processed    <-- Processed (combined, cleaned) data used for modeling
 │   └── raw          <-- Original (immutable) data dump
@@ -36,7 +38,7 @@ SyriaTel has identified that it is losing potential revenue by investing resourc
 
 To create a replica of the environment needed to run my notebook, run: 
 
-conda env create --file churn.yml
+`conda env create --file churn.yml`
 
 ## Data Understanding
 
